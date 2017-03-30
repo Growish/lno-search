@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test search widget</title>
+    <script type="application/javascript" src="dist/lno-search.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/lno-search.min.css">
+</head>
+<body>
+
+<form id="lno_form" class="lno-search-wrapper lno-cf">
+    <input type="text" name="lno_filter" id="lno_filter" required="" placeholder="Cognome sposi / codice lista">
+    <input id="lno_send_btn" type="submit" value="Cerca">
+    <div id="lno_results" class="lno_results"></div>
+    <span>powered by <a href="https://listanozzeonline.com">ListaNozzeOnline.com</a></span>
+</form>
+
+<script>
+    lnoSearch.init('587ca51a7fd05fb2468b4567');
+</script>
+
+</body>
+</html>

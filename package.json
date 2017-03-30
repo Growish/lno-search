@@ -1,0 +1,10 @@
+{
+  "name": "lnoSearch",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-stripcomments": "^0.7.2"
+  }
+}

@@ -7,6 +7,7 @@ Widget di ricerca liste nozze per partners di ListaNozzeOnline.com
 - Caricare un file JS e un CSS nel proprio sito, si consiglia usare direttamente questi:
 
 > https://s3.eu-central-1.amazonaws.com/growish-partner/widget-network/lno-search.min.css
+
 > https://s3.eu-central-1.amazonaws.com/growish-partner/widget-network/lno-search.min.js
 
 - Inserire il blocco di HTML sottostante dove si vuole far vedere il form di ricerca lista nozze.

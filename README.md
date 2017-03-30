@@ -12,7 +12,7 @@ Widget di ricerca liste nozze per partners di ListaNozzeOnline.com
 
 - Inserire il blocco di HTML sottostante dove si vuole far vedere il form di ricerca lista nozze.
 
-```javascript
+```html
 <form id="lno_form" class="lno-search-wrapper lno-cf">
     <input type="text" name="lno_filter" id="lno_filter" required="" placeholder="Cognome sposi / codice lista">
     <input id="lno_send_btn" type="submit" value="Cerca">

@@ -9,14 +9,15 @@
 <body>
 
 <form id="lno_form" class="lno-search-wrapper lno-cf">
-    <input type="text" name="lno_filter" id="lno_filter" required="" placeholder="Cognome sposi / codice lista">
+    <input type="text" name="lno_filter" id="lno_filter" required="" placeholder="Cognome sposi">
     <input id="lno_send_btn" type="submit" value="Cerca">
     <div id="lno_results" class="lno_results"></div>
-    <span>powered by <a href="https://listanozzeonline.com">ListaNozzeOnline.com</a></span>
+    <span class="lno_link">Sei uno sposo? <a id="lno_link" href="#">ACCEDI</a></span>
+    <span class="lno_sign">powered by <a href="https://listanozzeonline.com">ListaNozzeOnline.com</a></span>
 </form>
 
 <script>
-    lnoSearch.init('587ca51a7fd05fb2468b4567');
+    lnoSearch.init('587ca51a7fd05fb2468b4567', 'ulove');
 </script>
 
 </body>

@@ -21,10 +21,10 @@ Widget di ricerca liste nozze per partners di ListaNozzeOnline.com
 </form>
 ```
 
-- Inizializzare il widget indicando il codice del network a cui si appartiene.
+- Inizializzare il widget indicando il codice del network e il nome a cui si appartiene.
 
 ```javascript
-lnoSearch.init('587ca51a7fd05fb2468b4567');
+lnoSearch.init('587ca51a7fd05fb2468b4567', 'ulove');
 ```
 
 

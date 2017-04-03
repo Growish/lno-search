@@ -19,7 +19,16 @@
     position: relative;
 }
 
-.lno-search-wrapper span {
+.lno-search-wrapper .lno_link {
+    position: absolute;
+    left: 10px;
+    bottom: 3px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #929292;
+}
+
+.lno-search-wrapper .lno_sign {
     position: absolute;
     bottom: 3px;
     right: 5px;
@@ -60,7 +69,7 @@
     height: 20px;
     padding: 10px 5px;
     float: left;
-    font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    font: bold 13px 'sans-serif', 'lucida sans', 'trebuchet MS', 'Tahoma';
     border: 0;
     background: #EEE;
     border-radius: 3px 0 0 3px;
@@ -99,7 +108,7 @@
     cursor: pointer;
     height: 40px;
     width: 120px;
-    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    font: bold 15px/40px 'sans-serif', 'lucida sans', 'trebuchet MS', 'Tahoma';
     color: white;
     text-transform: uppercase;
     background: #D83C3C;

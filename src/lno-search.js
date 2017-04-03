@@ -49,7 +49,8 @@
 
 var lnoSearch = (function() {
 
-  var _network;
+  var _networkId;
+  var _networkName;
   var _button;
 
   var _buttonInitValue;
@@ -57,7 +58,7 @@ var lnoSearch = (function() {
 
   var _getData = function(filter) {
     var script = document.createElement('script');
-    script.src = 'https://ulove.listanozzeonline.com/apiproxy/v1/search/?filter=' + filter + '&network=' + _network+ '&callback=lnoSearch.callback';
+    script.src = 'https://' + _networkName + '.listanozzeonline.com/apiproxy/v1/search/?filter=' + filter + '&network=' + _networkId+ '&callback=lnoSearch.callback';
     document.getElementsByTagName('head')[0].appendChild(script);
     _timer = setTimeout(function () {
       _button.disabled = false;
@@ -79,6 +80,11 @@ var lnoSearch = (function() {
 
     _getData(filter);
   };
+
+    var _goToLink = function(e) {
+        e.preventDefault();
+        location.href = "https://" + _networkName + ".listanozzeonline.com?sposo=1";
+    };
 
   var _appendItem = function(element) {
 
@@ -126,8 +132,16 @@ var lnoSearch = (function() {
       }
 
     },
-    init: function(nId) {
-      _network = nId;
+    init: function(nId, nName) {
+      _networkId = nId;
+      _networkName = nName;
+      var ele = document.getElementById('lno_link');
+      if(ele.addEventListener) {
+          ele.addEventListener("click", _goToLink, false);
+      } else if(ele.attachEvent){
+          ele.attachEvent('onclick', _goToLink);
+      }
+
     },
     search: function(filter) {
       _getData(filter);

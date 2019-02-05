@@ -17,6 +17,9 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     position: relative;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .lno-search-wrapper .lno_link {
@@ -54,6 +57,7 @@
     padding: 5px;
     border-left: 1px solid #ddd;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .lno-search-wrapper .lno-no-result {
@@ -73,6 +77,9 @@
     border: 0;
     background: #EEE;
     border-radius: 3px 0 0 3px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .lno-search-wrapper input[type="text"]:focus {
@@ -108,7 +115,7 @@
     cursor: pointer;
     height: 40px;
     width: 120px;
-    font: bold 15px/40px 'sans-serif', 'lucida sans', 'trebuchet MS', 'Tahoma';
+    font: bold 14px/40px 'sans-serif', 'lucida sans', 'trebuchet MS', 'Tahoma';
     color: white;
     text-transform: uppercase;
     background: #D83C3C;
@@ -148,4 +155,8 @@
 .lno-search-wrapper input[type="submit"]::-moz-focus-inner {
     border: 0;
     padding: 0;
+}
+
+.lno-search-wrapper span {
+    font: 400 16px sans-serif,'lucida sans','trebuchet MS',Tahoma;
 }
